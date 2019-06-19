@@ -11,4 +11,3 @@ $con =mysqli_connect($dbHost, $dbUsername, $dbPassword, $dbName);
 if(!$con){
     echo "error";
 }
-?>

@@ -139,12 +139,7 @@ function viewStudents(){
 
 }
 
-  function datatable(){
-    $( document ).ready( function () {
-    var t = $( '#chayan' ).DataTable( {
-      "lengthMenu": [
-        [ 50, 100, 500, -1 ],
-        [ 50, 100, 500, "All" ]
+  f, 100, 500, "All" ]
       ],
       "iDisplayLength":50,
       responsive: true,

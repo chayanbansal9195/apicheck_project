@@ -1,0 +1,133 @@
+/*
+if it's not present, don't show loader */
+.input-group-addon{
+	cursor: pointer;
+}
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 50px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	/**background: url(images/loader-128x/Preloader_3.gif) center no-repeat #fff;**/
+}
+.date-style{
+	margin-right:100px;
+	margin-top:15px;
+	text-align:right;
+	font-style: italic;
+}
+.navbar-brand{
+    color:black;
+    font-weight: bold;
+    font-family: 
+}
+.text-capitalize{
+	text-transform: uppercase;
+}
+.input-group-btn{
+	overflow: hidden;
+}
+input[type="checkbox"] {
+   width: 25px;
+  height: 25px;
+}
+h5 a{
+	text-decoration: none;
+	color:black;
+}
+.printable{
+	display: none;
+}
+@media print{
+	#page-wrapper{
+		border: none;
+	}
+	.printable{
+		display: block;
+	}
+	.hidingButton{
+		display: none;
+	}
+	#page-wrapper{
+		margin: 0px 0px 0px 0px;
+	}
+	.dataTables_length{
+		display: none;
+	}
+	.dataTables_filter{
+		display: none;
+	}
+	.dataTables_paginate {
+		display: none;
+	}
+	button {
+		display:none;
+	}
+	a[href]:after {
+	    content: none !important;
+	  }
+	.dataTables_info{
+		display: none;
+	}
+	.table{
+		font-size: 12px;
+	}
+	thead *{
+		background-image: none;
+	}
+	.sorting_asc{
+		background-image: none;
+	}
+	.sorting{
+		background-image: none;
+	}
+	.sorting:after{
+		background-image: none;
+	}
+	.sorting_desc{
+		background: none;
+	}
+	.navbar-default{
+		display: none;
+		border:none;
+	}
+	.container-fluid{
+		border:0px solid #fff;
+	}
+	.no-print{
+		display: none;
+	}
+	.dataTable * {
+	    background-image: none !important;
+	    /*text-transform: uppercase;*/
+	}
+	.btn{
+		display: none;
+	}
+	th{
+		font-weight: normal !important;
+	}
+	.dataTable thead th, .dataTable tbody td, table tbody td,table thead th, table tfoot td{
+		padding: 3px !important;
+	}
+	div{
+        overflow-x: hidden;
+    }
+}
+
+.dataTable tbody td, table tbody td, table tfoot td{
+	padding: 2px !important;
+}
+.dataTable thead th, table thead th{
+	padding: 4px !important;
+}
+.dataTables_filter{
+	text-align: right !important;
+}
+.dataTables_paginate, .paging_simple_numbers{
+	text-align: right !important;
+}

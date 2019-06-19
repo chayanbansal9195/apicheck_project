@@ -17,9 +17,39 @@
 </head>
 
 <body>
+<script type="text/javascript">
+  function addrow() {
+  var table = document.getElementById("mytable");
+  var rowno = parseInt(document.getElementById("norows").value);
+  var erow = parseInt(document.getElementById("totalrow").value);
+  for (var i = 1; i <= rowno; i++)
+  {
+  var trow = erow + i;
+  var row = table.insertRow(trow);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  var cell3 = row.insertCell(2);
+
+  cell1.innerHTML = '<input class="form-control" type="name" name="name[]" placeholder="name">';
+  cell2.innerHTML = '<input type="number" class="form-control" name="class[]" placeholder="class">';
+  cell3.innerHTML = '<input type="number" class="form-control" name="rollno[]" placeholder="roll number" id="">';
+  }
+  document.getElementById("totalrow").value = trow;
+}
+</script>
     <div class="container" align="center" >
     <form action="lnkaction.php" method="post" >
-        <table border="5px" class="table table-light bg-dark" style="color:yellow;font-size:20px;margin-top:-100px">
+    <input type="hidden" name="totalrow" id="totalrow" value="4" />
+    <table width="95%" align="center"  border="0" style="border-collapse: collapse; font-size: 14px;" name="tble" >
+<tr>
+<td align="right" width="100%">
+Add&nbsp; <input type="text" id="norows" maxlength="3" style="width:60px; text-align:center;" value="1" onfocus="this.select();" />&nbsp; Row(s) 
+&nbsp;<button type="button" style="border-radius:30px;" class="btn btn-info btn-sm" onclick="addrow();">Go</button>
+</td>
+</tr>
+</table>
+
+        <table border="5px" id="mytable" class="table table-light bg-dark" style="color:yellow;font-size:20px;margin-top:-100px">
             <tr>
                 <th class="text-center">
                     Name
@@ -31,6 +61,7 @@
                     rollno
                 </th>
             </tr><br>
+            
             <tr>
                 <td>
                     <input class="form-control" type="name" name="name[]" placeholder="name" onchange="evechng(1);">

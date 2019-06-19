@@ -13,9 +13,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
     </head>
-    <body>
-       
-        
+    <body >
+        <div class="container">
+       <img src="images/a.png" alt="" width="100px" height="100px" style="margin-left:500px;"> 
+       <h1 style="margin-top:100px;">WELCOME TO STUDENT DATABASE MANAGEMENT</h1>
+</div>
         <script src="" async defer></script>
     </body>
 </html>
