@@ -17,11 +17,17 @@
       
     </div>
     <div class="panel-body">
-      
-    </div>
-  </div>
+     <?php
+	if (isset($_SESSION['HOUSE_suc'])) {
+                 //echo "<span class='alert alert-success'>".$success."</span>";
+                echo '<div class = "alert alert-success alert-dismissable">
+                    <button type = "button" class = "close" data-dismiss = "alert" aria-hidden = "true">
+                    &times;
+                    </button>'.$_SESSION['HOUSE_suc'].'
+                    </div>';
+                unset($_SESSION['HOUSE_suc']);
+                }
 
-  <?php
   include "dbConfig.php";
   $sql = mysqli_query($con, "select * from multidata");
 
@@ -58,7 +64,8 @@
       </tr>
     </form>
   </table>
-
+   </div>
+  </div>
   <script>
     function changeve(n) {
 

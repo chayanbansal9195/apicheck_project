@@ -38,6 +38,17 @@
 }
 </script>
     <div class="container" align="center" >
+    <?php
+	if (isset($_SESSION['HOUSE_suc'])) {
+                 //echo "<span class='alert alert-success'>".$success."</span>";
+                echo '<div class = "alert alert-success alert-dismissable">
+                    <button type = "button" class = "close" data-dismiss = "alert" aria-hidden = "true">
+                    &times;
+                    </button>'.$_SESSION['HOUSE_suc'].'
+                    </div>';
+                unset($_SESSION['HOUSE_suc']);
+                }
+	?>
     <form action="lnkaction.php" method="post" >
     <input type="hidden" name="totalrow" id="totalrow" value="4" />
     <table width="95%" align="center"  border="0" style="border-collapse: collapse; font-size: 14px;" name="tble" >
