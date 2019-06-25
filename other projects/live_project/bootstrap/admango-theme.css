@@ -1,0 +1,7 @@
+/*Admango Theme Desing Css*/
+.form-control,.btn,.input-group-addon{
+	border-radius: 0px;
+}
+.navbar{
+	min-height: 40px;
+}

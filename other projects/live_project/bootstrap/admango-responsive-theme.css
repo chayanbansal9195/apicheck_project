@@ -1,0 +1,31 @@
+/*Large devices Desktops */
+@media (min-width:1200px){
+	.section-form{
+		margin-top: 5px; 
+	}
+}
+/*Medium devices Desktops*/
+@media (min-width:992px) and (max-width: 1199px){
+	.section-form{
+		margin-top: 5px; 
+	}
+}
+/*For Small Devices Tablets */
+@media (min-width:768px) and (max-width: 992px){
+	.section-form{
+		margin-top: 10px; 
+	}
+}
+/*For Extra Small Devices Phones*/
+@media screen and (max-width:767px){
+	.section-form{
+		margin-top: 10px; 
+	}
+}
+@media (min-width:768px){
+	.navbar-nav>li>a{
+		padding-top: none;
+		padding-bottom: none;
+	}
+	
+}
